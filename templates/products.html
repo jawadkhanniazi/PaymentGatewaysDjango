@@ -1,0 +1,29 @@
+
+{% block content %}  
+
+{% for i in product_details %}
+<form action="order/product" method="GET">
+        <h5 name="id" hidden>{{i.ids}}</h5>
+        <h5 class="card-title" name="name">{{i.name}}e</h5>
+        <h5 class="card-title">{{i.price}}e</h5>
+        <p class="card-text">{{i.detaisl}}</p>
+        <button type="submit" name={{i.ids}}>order now</button>
+    </form>
+
+{% endfor %} 
+{% endblock %}
+<!-- <form action="order/product" method="GET">
+    <input type="text" name="id" hidden value="1"></h5>
+    <input type="text" name="nameofproduct" value="premium"></h5>
+    <input type="text" name="price" value="1000"></h5>
+    <input type="text" name="detaisl" value="this is test product"></h5>
+    <button>order now</button>
+    <h5 class="card-title" name="name">{{i.name}}e</h5>
+      <h5 class="card-title">{{i.price}}e</h5>
+      <p class="card-text">{{i.detaisl}}</p>
+         
+      <a href="#" class="btn btn-primary">Place Order</a>
+</form> --> 
+<form action="">
+
+</form>
